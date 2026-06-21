@@ -1,7 +1,12 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>28atiq</title><style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>28atiq</title>
+
+<style>
 
 *{
 margin:0;
@@ -14,6 +19,35 @@ body{
 background:#ffffff;
 color:#111;
 overflow:hidden;
+}
+
+/* INTRO */
+
+#intro{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#000;
+color:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+z-index:9999;
+}
+
+.intro-text{
+font-size:24px;
+font-weight:bold;
+margin:10px 0;
+}
+
+/* MAIN */
+
+#main{
+display:none;
 }
 
 .hero{
@@ -33,9 +67,8 @@ margin-bottom:15px;
 }
 
 .title{
-font-size:48px;
+font-size:42px;
 font-weight:700;
-letter-spacing:2px;
 }
 
 .logo{
@@ -51,70 +84,109 @@ font-size:18px;
 color:#666;
 }
 
-.instagram{
-display:inline-block;
+.instagram-btn{
 margin-top:30px;
 padding:14px 35px;
 background:#111;
-color:#fff;
+color:white;
 text-decoration:none;
 border-radius:50px;
 font-weight:bold;
 transition:.3s;
 }
 
-.instagram:hover{
-transform:scale(1.05);
+.instagram-btn:active{
+transform:scale(.95);
 }
 
-</style></head><body><section class="hero"><div id="greeting" class="greeting">
-Welcome to 28atiq
-</div><div class="title">
+</style>
+</head>
+
+<body>
+
+<div id="intro">
+
+<div class="intro-text">
+INITIALIZING...
+</div>
+
+<div class="intro-text">
+ACCESS GRANTED...
+</div>
+
+<div class="intro-text">
 WELCOME TO 28ATIQ
-</div><div class="logo">
+</div>
+
+</div>
+
+<div id="main">
+
+<section class="hero">
+
+<div id="greeting" class="greeting">
+Welcome to 28atiq
+</div>
+
+<div class="title">
+WELCOME TO 28ATIQ
+</div>
+
+<div class="logo">
 ²⁸atiq
-</div><div class="tagline">
+</div>
+
+<div class="tagline">
 Simplicity • Identity • Individuality
-</div><a class="instagram"
+</div>
+
+<a
+class="instagram-btn"
 href="https://instagram.com/28atiq"
 target="_blank">
+
 Instagram
+
 </a>
 
-</section><script>
+</section>
+
+</div>
+
+<script>
+
+setTimeout(function(){
+
+document.getElementById("intro").style.display="none";
+
+document.getElementById("main").style.display="block";
+
+},3000);
 
 const greeting=document.getElementById("greeting");
 
 const hour=new Date().getHours();
 
 if(hour<12){
-greeting.innerText="Good Morning, Welcome to 28atiq";
+
+greeting.innerText=
+"Good Morning, Welcome to 28atiq";
+
 }
 else if(hour<18){
-greeting.innerText="Good Afternoon, Welcome to 28atiq";
+
+greeting.innerText=
+"Good Afternoon, Welcome to 28atiq";
+
 }
 else{
-greeting.innerText="Good Evening, Welcome to 28atiq";
+
+greeting.innerText=
+"Good Evening, Welcome to 28atiq";
+
 }
 
-</script></body>
+</script>
+
+</body>
 </html>
-<section class="section">
-
-<h2>Birthday Countdown</h2>
-
-<div id="countdown">
-Loading...
-</div>
-
-</section>
-
-<section class="section">
-
-<h2>Website Age</h2>
-
-<div id="websiteAge">
-Loading...
-</div>
-
-</section>
