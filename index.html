@@ -3,19 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>28Atiq</title>
+
+<title>28atiq.in | Official Website</title>
 
 <style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-background:#f8f8f8;
+background:#ffffff;
 color:#111;
+overflow-x:hidden;
 }
 
 .hero{
@@ -28,56 +31,65 @@ text-align:center;
 padding:20px;
 }
 
+.welcome{
+font-size:20px;
+color:#555;
+margin-bottom:15px;
+}
+
+.title{
+font-size:48px;
+font-weight:700;
+}
+
 .logo{
 font-size:90px;
 font-weight:900;
 color:#d4af37;
-}
-
-.subtitle{
-font-size:22px;
-margin-top:10px;
+margin-top:15px;
 }
 
 .tagline{
 margin-top:15px;
-font-size:16px;
+font-size:18px;
 color:#666;
 }
 
-.btn{
-display:inline-block;
-margin-top:30px;
-padding:14px 30px;
-background:black;
-color:white;
-text-decoration:none;
-border-radius:50px;
-font-weight:bold;
-}
-
-.about{
+.section{
 padding:80px 25px;
-max-width:900px;
+max-width:1000px;
 margin:auto;
 text-align:center;
 }
 
-.about h2{
+.section h2{
 font-size:36px;
 margin-bottom:20px;
 }
 
-.about p{
-line-height:1.8;
+.section p{
 font-size:18px;
+line-height:1.8;
 color:#444;
 }
 
-footer{
-padding:30px;
+.contact a{
+display:block;
+margin:10px 0;
+text-decoration:none;
+color:#d4af37;
+font-weight:bold;
+}
+
+.footer{
+padding:40px 20px;
 text-align:center;
 color:#666;
+border-top:1px solid #eee;
+}
+
+.gold{
+color:#d4af37;
 }
 </style>
 </head>
@@ -85,28 +97,140 @@ color:#666;
 <body>
 
 <section class="hero">
-<div class="logo">28</div>
-<div class="subtitle">Digital Identity of ²⁸atiq</div>
-<div class="tagline"> 28atiq .</div>
 
-<a class="btn" href="https://instagram.com/28atiq" target="_blank">
-Instagram
-</a>
+<div id="greeting" class="welcome">
+Welcome to 28atiq
+</div>
+
+<div class="title">
+WELCOME TO 28ATIQ
+</div>
+
+<div class="logo">
+²⁸atiq
+</div>
+
+<div class="tagline">
+Simplicity. Identity. 28atiq.
+</div>
+
 </section>
 
-<section class="about">
-<h2>About</h2>
+<section class="section">
+
+<h2>Birthday</h2>
 
 <p>
-Welcome to 28. This is the official personal website of ²⁸atiq.
-A place where ideas, projects and future goals come together.
+Date of Birth: 29 May 2008
+</p>
+
+<p>
+Age: 18
+</p>
+
+<p>
+Live Birthday Countdown Coming Soon...
 </p>
 
 </section>
 
-<footer>
-© 2026 28Atiq
-</footer>
+<section class="section">
+
+<h2>Location</h2>
+
+<p>
+Dandothi, Karnataka, India
+</p>
+
+<p>
+Interactive Globe Coming Soon...
+</p>
+
+</section>
+
+<section class="section">
+
+<h2>Quote</h2>
+
+<p>
+"28atiq is more than a name. It's an identity."
+</p>
+
+</section>
+
+<section class="section">
+
+<h2>About Me</h2>
+
+<p>
+Welcome to 28atiq.in.
+<br><br>
+Born on 29 May 2008 and currently 18 years old, ²⁸atiq is a personal digital identity built around simplicity, style and individuality. Created by a boy from Dandothi, Karnataka, India, this space reflects a unique perspective and a passion for creating something memorable.
+<br><br>
+More than just a name, ²⁸atiq represents identity, character and personal expression.
+<br><br>
+Thank you for visiting 28atiq.in.
+</p>
+
+</section>
+
+<section class="section contact">
+
+<h2>Contact</h2>
+
+<a href="mailto:28atiq.in@gmail.com">
+28atiq.in@gmail.com
+</a>
+
+<a href="https://instagram.com/28atiq" target="_blank">
+Instagram @28atiq
+</a>
+
+</section>
+
+<section class="section">
+
+<h2>Thank You</h2>
+
+<p>
+Thank you for visiting 28atiq.in
+</p>
+
+</section>
+
+<div class="footer">
+
+<div class="gold">²⁸atiq</div>
+
+<br>
+
+Mohammed Atiq Pathan
+
+<br>
+
+Dandothi, Karnataka, India
+
+<br><br>
+
+© 2026 28atiq.in
+
+</div>
+
+<script>
+const greeting=document.getElementById("greeting");
+
+const hour=new Date().getHours();
+
+if(hour<12){
+greeting.innerText="Good Morning, Welcome to 28atiq";
+}
+else if(hour<18){
+greeting.innerText="Good Afternoon, Welcome to 28atiq";
+}
+else{
+greeting.innerText="Good Evening, Welcome to 28atiq";
+}
+</script>
 
 </body>
 </html>
